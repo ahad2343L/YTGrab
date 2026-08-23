@@ -40,7 +40,7 @@ Client → FastAPI → Celery task queue → Redis (broker)
 ## Installation
 
 ```bash
-git clone https://github.com/ahad2453l/<repo-name>.git
+git clone https://github.com/ahad2453l/YTGrab.git
 cd <repo-name>
 pip install -r requirements.txt
 ```
