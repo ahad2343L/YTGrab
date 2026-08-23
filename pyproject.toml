@@ -1,0 +1,22 @@
+[project]
+name = "youtube-video-downloader"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "celery>=5.6.3",
+    "fastapi[standard]>=0.141.1",
+    "redis>=8.1.0",
+    "uvicorn[standard]>=0.52.4",
+    "yt-dlp>=2026.8.19",
+]
+
+[project.scripts]
+youtube-video-downloader = "youtube_video_downloader:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+[tool.uv]
+package = false
